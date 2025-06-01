@@ -2,3 +2,5 @@
 README.md
 scripts
 wallpapers
+.config/ags/node_modules
+.config/ags/@girs
