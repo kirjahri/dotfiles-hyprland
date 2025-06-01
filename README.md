@@ -1,6 +1,6 @@
 # dotfiles-hyprland
 
-The dotfiles for my [Hyprland]("https://hyprland.org") system(s).
+The dotfiles for my [Hyprland](https://hyprland.org) system(s).
 
 ## Installation
 
