@@ -1,0 +1,101 @@
+{
+  "modules-left": ["clock", "hyprland/window", "custom/seperator", "mpris"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": [
+    "tray",
+    "network",
+    "pulseaudio",
+    "backlight",
+    "battery",
+    "custom/power",
+  ],
+  // "margin-top": 8,
+  // "margin-right": 8,
+  // "margin-bottom": 0,
+  // "margin-left": 8,
+  "spacing": 8,
+  "clock": {
+    "format": "<b>{:%I:%M %p</b> | %a %b %d}",
+    "tooltip-format": "{calendar}",
+    "calendar": {
+      "format": {
+        "today": "<b><u>{}</u></b>",
+      },
+    },
+  },
+  "hyprland/window": {
+    "icon": true,
+    "icon-size": 13,
+  },
+  "custom/seperator": {
+    "format": "|",
+    "tooltip": false,
+  },
+  "mpris": {
+    "format": "{player_icon} {artist} - {title}",
+    "format-paused": "{status_icon} {artist} - {title}",
+    "player-icons": {
+      "default": "▶",
+      "spotify": " ",
+    },
+    "status-icons": {
+      "paused": "⏸",
+    },
+    "artist-len": 30,
+    "title-len": 50,
+  },
+  "hyprland/workspaces": {
+    "format": "{icon} {name}",
+    "format-icons": {
+      "active": " ",
+      "default": " ",
+    },
+  },
+  "tray": {
+    "icon-size": 13,
+    "spacing": 8,
+  },
+  "network": {
+    "format-ethernet": " ",
+    "format-wifi": " ",
+    "format-disconnected": " ",
+    "tooltip-format-ethernet": "{ipaddr}/{cidr}",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+    "tooltip-format-disconnected": "Disconnected",
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} ",
+    "format-muted": " ",
+    "format-source": "",
+    "format-source-muted": " ",
+    "format-icons": {
+      "default": ["", " ", " "],
+      "headphone": " ",
+      "headset": " ",
+      "hands-free": " ",
+      "portable": " ",
+      "car": " ",
+      "phone": " ",
+    },
+    "on-click": "pavucontrol",
+    "tooltip-format": "{desc} ({volume}%)",
+  },
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "],
+    "tooltip": false,
+  },
+  "battery": {
+    "interval": 1,
+    "format": "{icon} {capacity}%",
+    "format-charging": " {icon} {capacity}%",
+    "format-plugged": " {icon} {capacity}%",
+    "format-icons": [" ", " ", " ", " ", " "],
+  },
+  "custom/power": {
+    "format": "→ (wlogout)",
+    "on-click": "wlogout",
+    "tooltip": false,
+  },
+}

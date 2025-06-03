@@ -1,0 +1,119 @@
+@import "catppuccin-mocha.css";
+
+* {
+  min-height: 0;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-family: "Hack Nerd Font";
+  font-size: 13px;
+}
+
+button:hover {
+  box-shadow: none;
+  text-shadow: none;
+  background: none;
+  transition: none;
+}
+
+window#waybar {
+  background-color: @base-rgba;
+  border-bottom: 2px solid @overlay0;
+}
+
+.modules-left {
+  padding: 8px;
+}
+
+.modules-center {
+  padding: 8px;
+}
+
+.modules-right {
+  padding: 8px;
+}
+
+tooltip {
+  background-image: linear-gradient(to bottom, @base, @base-rgba);
+  border-radius: 8px;
+  border: 2px solid @overlay0;
+}
+
+#clock {
+  color: @base;
+  background-image: linear-gradient(to bottom, @red, @red-rgba);
+  padding: 0 8px;
+  border-radius: 8px;
+  border: 2px solid @red;
+}
+
+#window {
+  color: @text;
+}
+
+#custom-seperator {
+  color: @text;
+}
+
+#mpris {
+  color: @text;
+  padding: 0 8px 0 0;
+}
+
+#workspaces {
+  background-image: linear-gradient(to bottom, @mauve, @mauve-rgba);
+  border-radius: 8px;
+  border: 2px solid @mauve;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  color: @base;
+}
+
+#workspaces button.active {
+  font-weight: bold;
+}
+
+#tray {
+  background-image: linear-gradient(to bottom, @green, @green-rgba);
+  padding: 0 8px;
+  border-radius: 8px;
+  border: 2px solid @green;
+}
+
+#network {
+  color: @base;
+  background-image: linear-gradient(to bottom, @yellow, @yellow-rgba);
+  padding: 0 8px;
+  border-radius: 8px;
+  border: 2px solid @yellow;
+}
+
+#pulseaudio {
+  color: @base;
+  background-image: linear-gradient(to bottom, @blue, @blue-rgba);
+  padding: 0 8px;
+  border-radius: 8px;
+  border: 2px solid @blue;
+}
+
+#backlight {
+  color: @base;
+  background-image: linear-gradient(to bottom, @pink, @pink-rgba);
+  padding: 0 8px;
+  border-radius: 8px;
+  border: 2px solid @pink;
+}
+
+#battery {
+  color: @base;
+  background-image: linear-gradient(to bottom, @teal, @teal-rgba);
+  padding: 0 8px;
+  border-radius: 8px;
+  border: 2px solid @teal;
+}
+
+#custom-power {
+  color: @text;
+}
