@@ -1,0 +1,95 @@
+@import "catppuccin-mocha"
+
+configuration {
+  font: "Hack Nerd Font 12";
+}
+
+window {
+  border: 2px;
+  border-radius: 8px;
+  background-color: @base;
+  border-color: @lavender;
+}
+
+// mainbox {
+//   children: [inputbar, message, listview, mode-switcher];
+// }
+
+inputbar {
+  padding: 8px;
+  text-color: @text;
+}
+
+prompt {
+  text-color: @text;
+}
+
+entry {
+  text-color: @text;
+  placeholder-color: @overlay0;
+}
+
+num-rows {
+  text-color: @overlay0;
+}
+
+num-filtered-rows {
+  text-color: @overlay0;
+}
+
+listview {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: @mantle;
+  lines: 8;
+}
+
+scrollbar {
+  handle-width: 8px;
+  handle-color: @overlay0;
+  handle-ronded-corners: true;
+}
+
+element {
+  padding: 8px;
+  border-radius: 7px;
+  spacing: 8px;
+  children: [element-icon, element-text];
+}
+
+element normal.normal, element alternate.normal {
+  background-color: transparent;
+  text-color: @text;
+}
+
+element selected.normal {
+  background-color: @mauve;
+  text-color: @mantle;
+}
+
+mode-switcher {
+  padding: 8px;
+}
+
+button {
+  padding: 8px;
+  border-radius: 8px;
+  text-color: @text;
+}
+
+button selected {
+  background-color: @mauve;
+  text-color: @base;
+}
+
+message {
+  padding: 8px;
+  border: none;
+  text-color: @text;
+}
+
+textbox {
+  border: none;
+  text-color: @text;
+}
