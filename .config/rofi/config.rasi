@@ -1,7 +1,7 @@
 @import "catppuccin-mocha"
 
 configuration {
-  font: "Hack Nerd Font 12";
+  font: "BlexMono Nerd Font 12";
 }
 
 window {
