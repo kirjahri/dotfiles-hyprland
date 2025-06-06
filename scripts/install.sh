@@ -126,7 +126,6 @@ else
   install_yay
 fi
 
-
 cat << "EOF"
   ___           _        _ _
  |_ _|_ __  ___| |_ __ _| | |
@@ -146,10 +145,8 @@ case $yn in
     ;;
 esac
 
-
 echo ":: Installing Hyprland packages..."
 install_packages "${hyprland_packages[@]}"
-
 
 echo ":: Installing other packages..."
 install_packages "${packages[@]}"
@@ -189,7 +186,7 @@ esac
 
 echo ":: Symlinking configuration files..."
 stow --adopt .
-git pull # the --adopt flog on stow overwrites the files in the dotfiles folder so this is done in order to restore them
+git pull origin main # the --adopt flog on stow overwrites the files in the dotfiles folder so this is done in order to restore them
 
 systemctl --user enable "$HOME/.config/systemd/user/low-battery.timer"
 
