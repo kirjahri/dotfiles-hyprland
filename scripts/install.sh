@@ -73,7 +73,7 @@ install_packages_with_yay() {
 
   echo "The following packages will be installed:"
   printf "  %s\n" "${uninstalled_packages[@]}"
-  yes | yay -S "${uninstalled_packages[@]}"
+  yay -S "${uninstalled_packages[@]}"
 }
 
 DOTFILES_DIR="$HOME/dotfiles-hyprland"
