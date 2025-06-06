@@ -92,6 +92,7 @@ packages=(
   "rofi"
   "rofimoji"
   "cliphist"
+  "hyprshot"
   "wlogout"
   "gtk3"
   "gtk4"
