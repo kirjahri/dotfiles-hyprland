@@ -206,7 +206,7 @@ esac
 
 echo ":: Symlinking configuration files..."
 stow --adopt .
-git pull origin main # the --adopt flog on stow overwrites the files in the dotfiles folder so this is done in order to restore them
+git restore . # the --adopt flog on stow overwrites the files in the dotfiles folder so this is done in order to restore them
 
 systemctl --user enable "$HOME/.config/systemd/user/low-battery.timer"
 
