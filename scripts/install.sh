@@ -49,10 +49,24 @@ install_yay() {
 
   install_packages "${needed_packages[@]}"
 
-  git clone https://aur.archlinux.org/yay.git "$install_path"
-  cd "$install_path"
-  makepkg -si
-  echo ":: yay has been installed successfully"
+  if [ -d "$install_path" ]; then
+    echo "The install directory for yay ($install_path) already exists"
+    read -p "Would you like to delete the existing yay install directory? [Y/n]: "
+    case $yn in;
+      [Nn]*)
+        cd "$install_path"
+        makepkg -si
+        echo ":: yay has been installed successfully"
+        ;;
+      *)
+        rm -rf "$install_path"
+        git clone https://aur.archlinux.org/yay.git "$install_path"
+        cd "$install_path"
+        makepkg -si
+        echo ":: yay has been installed successfully"
+        ;;
+    esac
+  fi
 
   cd "$temp_path"
 }
