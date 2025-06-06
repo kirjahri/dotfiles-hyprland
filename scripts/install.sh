@@ -179,6 +179,7 @@ if [ -d "$DOTFILES_DIR" ]; then
   case $yn in
     [Yy]*)
       rm -rf "$DOTFILES_DIR"
+      git clone "https://github.com/kirjahri/dotfiles-hyprland.git" "$DOTFILES_DIR"
       ;;
     *)
       echo "Aborting installation process..."
