@@ -52,7 +52,7 @@ install_yay() {
   if [ -d "$install_path" ]; then
     echo "The install directory for yay ($install_path) already exists"
     read -p "Would you like to delete the existing yay install directory? [Y/n]: "
-    case $yn in;
+    case $yn in
       [Nn]*)
         cd "$install_path"
         makepkg -si
