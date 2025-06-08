@@ -119,6 +119,7 @@ packages=(
   "brightnessctl"
   "playerctl"
   "polkit-kde-agent"
+  "dunst"
   "dolphin"
   "qt5ct"
   "qt6ct"
