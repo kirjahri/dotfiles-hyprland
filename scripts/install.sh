@@ -120,6 +120,7 @@ packages=(
   "dolphin"
   "qt5ct"
   "qt6ct"
+  "kvantum"
   "waybar"
   "otf-font-awesome"
   "ttf-hack"
