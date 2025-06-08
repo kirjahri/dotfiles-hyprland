@@ -99,6 +99,8 @@ DOTFILES_DIR="$HOME/dotfiles-hyprland"
 
 hyprland_packages=(
   "hyprland"
+  "pipewire"
+  "wireplumber"
   "xdg-desktop-portal-hyprland"
   "hyprpaper"
   "hypridle"
