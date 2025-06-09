@@ -1,1 +1,1 @@
-.config/systemd/user/timers.target.wants
+.config/systemd/user/*.wants
